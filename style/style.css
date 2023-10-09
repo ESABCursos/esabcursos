@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-esc {
+    background-color: #060212;
+    color: #fff;
+}
+
+/* NAVBAR */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 30px;
+}
+
+.logo-texto {
+    font-size: 24px;
+    margin: 0 0 0 8px;
+    padding: 0;
+}
+
+.logo-texto span {
+    color: #8dbf20;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin-left: 8px;
+}
+
+.bg-esc .nav-link {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+}
+
+.bg-esc .nav-link:hover {
+    color: #8dbf20;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+/* NAVBAR-FIM */
+
+
+/* CAROUSEL */
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+/* CAROUSEL-FIM */
+
+/* SOBRE */
+.sobre-box {
+    display: flex;
+    align-items: center;
+}
+
+.sobre-titulo {
+    margin-bottom: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.sobre-titulo::after {
+    content: " ";
+    background-color: #8dbf20;
+    height: 3px;
+    width: 300px;
+    display: block;
+}
+
+.sobre-texto {
+    font-size: 14px;
+}
+
+.sobre-img img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* SOBRE-FIM */
+
+/* CURSOS */
+
+.cursos-titulo {
+    margin-bottom: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ccc;
+}
+
+.cursos-subtitulo {
+    margin: 0 0 8px 0;
+    color: #ccc;
+}
+
+.cursos-subtitulo span {
+    color: #8dbf20;
+}
+
+.cursos-nav {
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.cursos-nav .nav-item button {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.cursos-nav .nav-item button:not(.active)::after {
+    content: " ";
+    background-color: #8dbf20;
+    height: 3px;
+    width: 60px;
+    display: block;
+    margin: 8px auto 0 auto;
+}
+
+.cursos-nav .nav-item button.active {
+    background-color: #8dbf20;
+    color: #060212;
+    font-weight: bold;
+}
+
+.tab-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cursos-btn {
+    border: 1px solid #8dbf20;
+    background-color: transparent;
+    border-radius: 10px;
+    display: inline-block;
+    color: #ccc;
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 16px;
+}
+
+.cursos-btn:hover {
+    transform: scale(1.02);
+    color: #8dbf20;
+}
+/* CURSOS-FIM */
+
+/* ASSINATURAS */
+
+.assinaturas-titulo {
+    margin-bottom: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.assinaturas-titulo::after {
+    content: " ";
+    background-color: #8dbf20;
+    height: 3px;
+    width: 300px;
+    display: block;
+    margin: 8px auto 0 auto;
+}
+
+.card {
+    background-color: #060212;
+    color: #fff;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-valor {
+    color: #8dbf20;
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-condicao {
+    text-align: center;
+    margin: 0;
+    color: #c2c1c1;
+}
+
+.card-vantagens {
+    width: 80%;
+    margin: 16px auto 0 auto;
+}
+
+.card-vantagens li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.card-vantagens i {
+    color: #8dbf20;
+    margin-right: 8px;
+}
+
+.card button {
+    background-color: #8dbf20;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+}
+
+.card button:hover {
+    background-color: #6b911b;
+    transform: scale(1.01);
+}
+
+.card-link {
+    padding: 6px 12px;
+    display: block;
+    color: #060212;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* ASSINATURAS-FIM */
+
+/* MODAIS */
+
+.modal {
+    color: #060212;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+}
+
+.modal-header h3 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;    
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .carousel-item {
+        height: 220px;
+    }
+
+    .sobre-titulo {
+        font-size: 22px;
+    }
+
+    .sobre-titulo::after {
+        content: " ";
+        background-color: #8dbf20;
+        height: 3px;
+        width: 200px;
+        display: block;
+    }
+
+    .sobre-img {
+        margin-bottom: 16px;
+    }
+
+    .sobre-img img {
+        width: 50%;
+    }
+
+    .cursos-titulo {
+        font-size: 22px;
+    }
+
+    .cursos-nav .nav-item button {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .cursos-btn {
+        font-size: 12px;
+    }
+
+    .assinaturas-titulo {
+        font-size: 22px;
+    }
+
+    .assinaturas-titulo::after {
+        width: 200px;
+    }
+
+    .card-valor {
+        font-size: 32px;
+    }
+
+    .card-condicao {
+        font-size: 12px;
+    }
+
+    .card-vantagens {
+        font-size: 12px;
+    }
+
+    
+    .modal-header h3 {
+        font-size: 16px;
+    }
+
+    .modal-body p {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .carousel-item {
+        height: 340px;
+    }
+
+    .sobre-img {
+        margin-bottom: 16px;
+    }
+
+    .sobre-img img {
+        width: 50%;
+    }    
+
+    .cursos-nav .nav-item button {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .cursos-btn {
+        font-size: 12px;
+    }
+
+    .assinaturas-titulo {
+        font-size: 22px;
+    }
+
+    .assinaturas-titulo::after {
+        width: 200px;
+    }
+
+    .card-valor {
+        font-size: 32px;
+    }
+
+    .card-condicao {
+        font-size: 12px;
+    }
+
+    .card-vantagens {
+        font-size: 12px;
+    }
+
+    .modal-header h3 {
+        font-size: 16px;
+    }
+
+    .modal-body p {
+        font-size: 14px;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .carousel-item {
+        height: 520px;
+    }
+
+    .cursos-nav .nav-item button {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .cursos-btn {
+        font-size: 12px;
+    }
+
+    .assinaturas-titulo {
+        font-size: 22px;
+    }
+
+    .assinaturas-titulo::after {
+        width: 200px;
+    }
+
+    .card-valor {
+        font-size: 32px;
+    }
+
+    .card-condicao {
+        font-size: 12px;
+    }
+
+    .card-vantagens {
+        font-size: 12px;
+    }
+
+    .modal-header h3 {
+        font-size: 16px;
+    }
+
+    .modal-body p {
+        font-size: 14px;
+    }
+}

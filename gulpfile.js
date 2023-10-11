@@ -14,8 +14,6 @@ function imagesMin() {
     .pipe(gulp.dest('./dist/images'));
 }
 
-
-
 exports.default = gulp.parallel(styles, imagesMin);
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles))

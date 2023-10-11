@@ -1,0 +1,26 @@
+@use 'variables';
+
+.about {
+    display: flex;
+    align-items: center;
+
+    &__img {
+        img {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+    }
+
+    &__title {
+        
+        &::after {
+            content: " ";
+            background-color: variables.$color_2;
+            height: 3px;
+            width: 300px;
+            display: block;
+        }
+    }
+}

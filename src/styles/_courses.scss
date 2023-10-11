@@ -1,0 +1,61 @@
+@use 'variables';
+
+.courses {
+
+    &__subtitle {
+        margin: 0 0 8px 0;
+
+        span {
+            color: variables.$color_2;
+        }
+    }
+
+    &__nav {
+        justify-content: space-between;
+        margin-top: 16px;
+
+        &__button {
+            width: 90%;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+
+            &:not(.active) {
+                &::after {
+                    content: " ";
+                    background-color: variables.$color_2;
+                    height: 3px;
+                    width: 50px;
+                    display: block;
+                    margin: 8px auto 0 auto;
+                }
+            }
+        }
+
+        .courses__nav__button {
+            &.active {
+                background-color: variables.$color_2;
+                color: variables.$color_1;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__tab {
+        justify-content: center;
+
+        &__button {
+            border: 1px solid variables.$color_2;
+            background-color: transparent;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            padding: 8px 16px;
+
+            &:hover {
+                transform: scale(1.02);
+                color: variables.$color_2;
+            }
+        }
+    }
+}

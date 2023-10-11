@@ -1,5 +1,23 @@
 @use 'variables';
-@use 'bootstrap-class';
+@use 'header';
+@use 'banners';
+@use 'about-us';
+@use 'courses';
+@use 'signatures';
+
+@mixin titles ($color, $size) {
+    margin-bottom: 32px;
+    color: $color;
+    font-size: $size;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+@mixin texts ($color, $size) {
+    font-size: $size;
+    color: $color;
+}
 
 * {
     margin: 0;
@@ -8,28 +26,26 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.bg-dark {
+.title-default-dark {
+    @include titles(variables.$color_1, variables.$fs-title-default);    
+}
+
+.title-default {
+    @include titles(variables.$color_3, variables.$fs-title-default);
+}
+
+.text-default-dark {
+    @include texts(variables.$color_1, variables.$fs-text-default);
+}
+
+.text-default {
+    @include texts(variables.$color_4, variables.$fs-text-default);
+}
+
+.bg-dark-blue {
     background-color: variables.$color_1;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-
-    &__img {
-        width: 28px;
-    }
-
-    &__texto {
-        font-size: 24px;
-        margin: 0 0 0 8px;
-        padding: 0;
-        line-height: 31px;
-        color: variables.$color_3;
-
-        span {
-            color: variables.$color_2;
-            font-weight: bold;
-        }
-    }
+#nav-menu {
+    justify-content: end;
 }

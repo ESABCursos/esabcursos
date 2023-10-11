@@ -1,0 +1,35 @@
+@use 'variables';
+@use 'bootstrap-class';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-dark {
+    background-color: variables.$color_1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    &__img {
+        width: 28px;
+    }
+
+    &__texto {
+        font-size: 24px;
+        margin: 0 0 0 8px;
+        padding: 0;
+        line-height: 31px;
+        color: variables.$color_3;
+
+        span {
+            color: variables.$color_2;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@use 'variables';
+
+// navbar
+.nav-item {
+    margin-left: 8px;
+}
+
+.nav-link {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--fs-text-big);
+    color: variables.$color_3;
+
+    &:hover {
+        color: variables.$color_2;
+    }
+}
+
+.navbar-toggler {
+    background-color: variables.$color_2;
+}//navbar-end
+
+//carousel
+.carousel-item {
+    height: 600px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}//carousel-end

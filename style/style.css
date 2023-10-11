@@ -1,3 +1,20 @@
+:root {
+    /* font-size */
+    --fs-title-small: 22px;
+    --fs-title: 28px;
+    --fs-title-big: 32px;
+    --fs-text-small: 12px;
+    --fs-text: 14px;
+    --fs-text-big: 16px;
+    /* font-size-end */
+
+    /* colors */
+    --principal-color: #060212;
+    --secondary-color: #c2c1c1;
+    --tertiary-color: #8dbf20;
+    /* color-end */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +23,8 @@
 }
 
 .bg-esc {
-    background-color: #060212;
-    color: #fff;
+    background-color: var(--principal-color);
+    color: var(--secondary-color);
 }
 
 /* NAVBAR */
@@ -17,17 +34,19 @@
 }
 
 .logo-img {
-    width: 30px;
+    width: 28px;
 }
 
 .logo-texto {
     font-size: 24px;
     margin: 0 0 0 8px;
     padding: 0;
+    line-height: 31px;
+    color: #fff;
 }
 
 .logo-texto span {
-    color: #8dbf20;
+    color: var(--tertiary-color);
     font-weight: bold;
 }
 
@@ -35,21 +54,20 @@
     margin-left: 8px;
 }
 
-.bg-esc .nav-link {
+.nav-link {
     text-align: center;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: var(--fs-text-big);
     color: #fff;
 }
 
-.bg-esc .nav-link:hover {
-    color: #8dbf20;
+.nav-link:hover {
+    color: var(--tertiary-color);
 }
 
 .navbar-toggler {
-    background-color: #fff;
+    background-color: var(--secondary-color);
 }
-
 /* NAVBAR-FIM */
 
 
@@ -61,86 +79,86 @@
 .carousel-item img {
     width: 100%;
     height: 100%;
-}
+}/* CAROUSEL-FIM */
 
-/* CAROUSEL-FIM */
 
-/* SOBRE */
-.sobre-box {
+/* ABOUT */
+.about-box {
     display: flex;
     align-items: center;
 }
 
-.sobre-titulo {
+.about-title {
     margin-bottom: 24px;
     font-weight: normal;
     text-transform: uppercase;
+    font-size: var(--fs-title-big);
 }
 
-.sobre-titulo::after {
+.about-title::after {
     content: " ";
-    background-color: #8dbf20;
+    background-color: var(--tertiary-color);
     height: 3px;
     width: 300px;
     display: block;
 }
 
-.sobre-texto {
-    font-size: 14px;
+.about-text {
+    font-size: var(--fs-text-big);
 }
 
-.sobre-img img {
+.about-img img {
     width: 80%;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
-}
+}/* ABOUT-FIM */
 
-/* SOBRE-FIM */
 
-/* CURSOS */
-
-.cursos-titulo {
+/* COURSES */
+.courses-title {
     margin-bottom: 32px;
+    font-size: var(--fs-title-big);
     font-weight: bold;
     text-transform: uppercase;
-    color: #ccc;
+    color: var(--secondary-color);
 }
 
-.cursos-subtitulo {
+.courses-subtitle {
     margin: 0 0 8px 0;
-    color: #ccc;
+    color: var(--secondary-color);
+    font-size: var(--fs-text-big);
 }
 
-.cursos-subtitulo span {
-    color: #8dbf20;
+.courses-subtitle span {
+    color: var(--tertiary-color);
 }
 
-.cursos-nav {
+.courses-nav {
     justify-content: space-between;
     margin-top: 16px;
 }
 
-.cursos-nav .nav-item button {
+.courses-nav .nav-item button {
     width: 90%;
     display: block;
     margin: 0 auto;
     text-align: center;
-    font-size: 16px;
+    font-size: var(--fs-text-big);
 }
 
-.cursos-nav .nav-item button:not(.active)::after {
+.courses-nav .nav-item button:not(.active)::after {
     content: " ";
-    background-color: #8dbf20;
+    background-color: var(--tertiary-color);
     height: 3px;
     width: 60px;
     display: block;
     margin: 8px auto 0 auto;
 }
 
-.cursos-nav .nav-item button.active {
-    background-color: #8dbf20;
-    color: #060212;
+.courses-nav .nav-item button.active {
+    background-color: var(--tertiary-color);
+    color: var(--principal-color);
     font-weight: bold;
 }
 
@@ -149,35 +167,35 @@
     border-radius: 10px;
 }
 
-.cursos-btn {
-    border: 1px solid #8dbf20;
+.courses-btn {
+    border: 1px solid var(--tertiary-color);
     background-color: transparent;
     border-radius: 10px;
-    display: inline-block;
-    color: #ccc;
+    font-size: var(--fs-text-big);
+    color: var(--secondary-color);
     cursor: pointer;
     text-align: center;
     padding: 8px 16px;
 }
 
-.cursos-btn:hover {
+.courses-btn:hover {
     transform: scale(1.02);
-    color: #8dbf20;
-}
-/* CURSOS-FIM */
+    color: var(--tertiary-color);
+}/* COURSES-FIM */
 
-/* ASSINATURAS */
 
-.assinaturas-titulo {
+/* SIGNATURES */
+.signature-title {
     margin-bottom: 24px;
+    font-size: var(--fs-title-big);
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
 }
 
-.assinaturas-titulo::after {
+.signature-title::after {
     content: " ";
-    background-color: #8dbf20;
+    background-color: var(--tertiary-color);
     height: 3px;
     width: 300px;
     display: block;
@@ -185,45 +203,48 @@
 }
 
 .card {
-    background-color: #060212;
-    color: #fff;
+    background-color: var(--principal-color);
+    color: var(--secondary-color);
 }
 
 .card-header {
     text-align: center;
+    font-size: var(--fs-title);
 }
 
-.card-valor {
-    color: #8dbf20;
+.card-price {
+    color: var(--tertiary-color);
     font-size: 48px;
     text-align: center;
     font-weight: bold;
     margin: 0;
 }
 
-.card-condicao {
+.card-condition {
     text-align: center;
-    margin: 0;
+    margin: 0 0 10px 0;
     color: #c2c1c1;
+    font-size: var(--fs-text-small);
 }
 
-.card-vantagens {
+.card-benefitis {
     width: 80%;
     margin: 16px auto 0 auto;
+    font-size: var(--fs-text);
 }
 
-.card-vantagens li {
+.card-benefits li {
     list-style: none;
     margin-bottom: 10px;
 }
 
-.card-vantagens i {
-    color: #8dbf20;
+.card-benefits i {
+    color: var(--tertiary-color);
     margin-right: 8px;
 }
 
 .card button {
-    background-color: #8dbf20;
+    background-color: var(--tertiary-color);
     width: 40%;
     margin: 0 auto;
     border-radius: 10px;
@@ -238,16 +259,14 @@
 .card-link {
     padding: 6px 12px;
     display: block;
-    color: #060212;
+    color: var(--principal-color);
     font-weight: bold;
     text-decoration: none;
-}
-/* ASSINATURAS-FIM */
+}/* SIGNATURES-FIM */
 
 /* MODAIS */
-
 .modal {
-    color: #060212;
+    color: var(--principal-color);
 }
 
 .modal-header {
@@ -259,11 +278,96 @@
     font-size: 18px;
     text-align: center;
     margin: 0;
-    font-weight: bold;    
+    font-weight: bold;
+}/* MODAIS-FIM */
+
+/* ACCORDIONS (FAQ) */
+.accordion {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
 }
 
+.accordion-title {
+    margin-bottom: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--secondary-color);
+}
 
+.accordion-button {
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-weight: normal;
+    border-bottom: 0.3px solid var(--secondary-color);
+    font-size: var(--fs-text-big);
+}
 
+.accordion-button:hover {
+    color: var(--tertiary-color);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+.accordion-button:focus {
+    border-color: var(--tertiary-color);
+    box-shadow: none;
+}
+
+.accordion-body {
+    border-bottom: 0.1px solid var(--secondary-color);
+}
+
+.accordion-body p {
+    font-size: var(--fs-text);
+    color: #9c9999;
+}/* ACCORDIONS (FAQ)-FIM */
+
+/* FOOTER */
+.copy {
+    display: flex;
+    justify-content: center;
+}
+
+.copy p {
+    font-size: var(--fs-text-small);
+    font-weight: bold;
+    margin: 0;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media h4 {
+    font-weight: bold;
+    font-size: var(--fs-text-small);
+    text-align: center;
+}
+
+.social-media>ul {
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-media>ul>li {
+    list-style: none;
+}
+
+.social-media-link {
+    text-decoration: none;
+    color: var(--principal-color);
+    font-size: 20px;
+}/* FOOTER-FIM */
 
 
 
@@ -272,66 +376,63 @@
         height: 220px;
     }
 
-    .sobre-titulo {
-        font-size: 22px;
+    .about-title,
+    .courses-title,
+    .signature-title,
+    .accordion-title {
+        font-size: var(--fs-title-small);
     }
 
-    .sobre-titulo::after {
+    .nav-link,
+    .about-text,
+    .courses-subtitle,
+    .modal-body p,
+    .accordion-button {
+        font-size: var(--fs-text);
+    }
+
+    .courses-btn,
+    .card-condition,
+    .card-benefits,
+    .accordion-body p {
+        font-size: var(--fs-text-small);
+    }
+
+    .courses-nav .nav-item button {
+        font-size: var(--fs-text);
+        text-align: center;
+    } 
+
+    .modal-header h3 {
+        font-size: var(--fs-text-big);
+    }
+
+    .card-price {
+        font-size: var(--fs-title-big);
+    }
+
+    .about-title::after {
         content: " ";
-        background-color: #8dbf20;
+        background-color: var(--tertiary-color);
         height: 3px;
         width: 200px;
         display: block;
     }
 
-    .sobre-img {
+    .about-img {
         margin-bottom: 16px;
     }
 
-    .sobre-img img {
+    .about-img img {
         width: 50%;
-    }
+    }       
 
-    .cursos-titulo {
-        font-size: 22px;
-    }
-
-    .cursos-nav .nav-item button {
-        font-size: 14px;
-        text-align: center;
-    }
-    
-    .cursos-btn {
-        font-size: 12px;
-    }
-
-    .assinaturas-titulo {
-        font-size: 22px;
-    }
-
-    .assinaturas-titulo::after {
+    .signature-title::after {
         width: 200px;
-    }
+    }      
 
-    .card-valor {
-        font-size: 32px;
-    }
-
-    .card-condicao {
-        font-size: 12px;
-    }
-
-    .card-vantagens {
-        font-size: 12px;
-    }
-
-    
-    .modal-header h3 {
-        font-size: 16px;
-    }
-
-    .modal-body p {
-        font-size: 14px;
+    .social-media>ul {
+        width: 20%;
     }
 
 }
@@ -341,49 +442,63 @@
         height: 340px;
     }
 
-    .sobre-img {
+    .about-title,
+    .courses-title,
+    .signature-title,
+    .accordion-title {
+        font-size: var(--fs-title-small);
+    }
+
+    .nav-link,
+    .about-text,
+    .courses-subtitle,
+    .modal-body p,
+    .accordion-button {
+        font-size: var(--fs-text);
+    }
+
+    .courses-btn,
+    .card-condition,
+    .card-benefits,
+    .accordion-body p {
+        font-size: var(--fs-text-small);
+    }
+
+    .courses-nav .nav-item button {
+        font-size: var(--fs-text);
+        text-align: center;
+    } 
+
+    .modal-header h3 {
+        font-size: var(--fs-text-big);
+    }
+
+    .card-price {
+        font-size: var(--fs-title-big);
+    }
+
+    .about-title::after {
+        content: " ";
+        background-color: var(--tertiary-color);
+        height: 3px;
+        width: 200px;
+        display: block;
+    }
+
+    .about-img {
         margin-bottom: 16px;
     }
 
-    .sobre-img img {
+    .about-img img {
         width: 50%;
-    }    
+    }       
 
-    .cursos-nav .nav-item button {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .cursos-btn {
-        font-size: 12px;
-    }
-
-    .assinaturas-titulo {
-        font-size: 22px;
-    }
-
-    .assinaturas-titulo::after {
+    .signature-title::after {
         width: 200px;
-    }
+    }      
 
-    .card-valor {
-        font-size: 32px;
-    }
-
-    .card-condicao {
-        font-size: 12px;
-    }
-
-    .card-vantagens {
-        font-size: 12px;
-    }
-
-    .modal-header h3 {
-        font-size: 16px;
-    }
-
-    .modal-body p {
-        font-size: 14px;
+    .social-media>ul {
+        width: 20%;
     }
 
 
@@ -394,32 +509,32 @@
         height: 520px;
     }
 
-    .cursos-nav .nav-item button {
+    .courses-nav .nav-item button {
         font-size: 14px;
         text-align: center;
     }
 
-    .cursos-btn {
+    .courses-btn {
         font-size: 12px;
     }
 
-    .assinaturas-titulo {
+    .signature-title {
         font-size: 22px;
     }
 
-    .assinaturas-titulo::after {
+    .signature-title::after {
         width: 200px;
     }
 
-    .card-valor {
+    .card-price {
         font-size: 32px;
     }
 
-    .card-condicao {
+    .card-condition {
         font-size: 12px;
     }
 
-    .card-vantagens {
+    .card-benefits {
         font-size: 12px;
     }
 

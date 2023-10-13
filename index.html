@@ -1,573 +1,585 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./dist/css/style.css">
-    <title>ESAB Cursos</title>
-</head>
-
-<body>
-    <header class="sticky-top py-1 bg-dark-blue" id="header">
-        <div class="navbar navbar-expand-lg">
-            <div class="container align-items-center">
-                <div class="logo">
-                    <img class="logo__img" src="./dist/images/logos/logo-esab-cursos-ST-SF.png"
-                        alt="Logo da ESAB Cursos">
-                    <h1 class="logo__text">
-                        ESAB<span>CURSOS</span>
-                    </h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./dist/css/style.css">
+        <title>ESAB Cursos</title>
+    </head>
+    <body>
+        <header class="sticky-lg-top py-1 bg-dark-blue" id="header">
+            <div class="navbar navbar-expand-lg">
+                <div class="container align-items-center">
+                    <div class="logo">
+                        <img class="logo__img" src="./dist/images/logos/logo-esab-cursos-ST-SF.png" alt="Logo da ESAB Cursos">
+                        <h1 class="logo__text">
+                            ESAB
+                            <span>CURSOS</span>
+                        </h1>
+                    </div>
+                    <div>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#nav-menu"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <nav class="navbar-collapse collapse navbar-expand-lg mt-3 mt-lg-0" id="nav-menu">
+                        <ul class="nav navbar-nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-us">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#courses">Nossos Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#signature">Assinaturas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faq">Perguntas Frequentes</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- BANNERS -->
+        <section id="banners">
+            <!-- CAROUSEL -->
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./dist/images/banners/banner-1.jpg" alt="" data-bs-interval="3000">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./dist/images/banners/banner-1.jpg" alt="" data-bs-interval="3000">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./dist/images/banners/banner-1.jpg" alt="" data-bs-interval="3000">
+                    </div>
                 </div>
                 <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
-                        <span class="navbar-toggler-icon"></span>
+                    <button
+                        type="button"
+                        class="carousel-control-prev"
+                        data-bs-target="#carousel"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button
+                        type="button"
+                        class="carousel-control-next"
+                        data-bs-target="#carousel"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon"></span>
                     </button>
                 </div>
-                <nav class="navbar-collapse collapse navbar-expand-lg mt-3 mt-lg-0" id="nav-menu">
-                    <ul class="nav navbar-nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-us">Sobre Nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#courses">Nossos Cursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#signature">Assinaturas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#faq">Perguntas Frequentes</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <section id="banners">
-        <!-- CAROUSEL -->
-        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./dist/images/banners/banner-1.jpg" alt="" data-bs-interval="3000">
-                </div>
-                <div class="carousel-item">
-                    <img src="./dist/images/banners/banner-1.jpg" alt="" data-bs-interval="3000">
-                </div>
-                <div class="carousel-item">
-                    <img src="./dist/images/banners/banner-1.jpg" alt="" data-bs-interval="3000">
+                <div class="carousel-indicators">
+                    <button
+                        class="active"
+                        data-bs-target="#carousel"
+                        data-bs-slide-to="0"
+                        type="button"
+                    ></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="1" type="button"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="2" type="button"></button>
                 </div>
             </div>
-            <div>
-                <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
-            <div class="carousel-indicators">
-                <button class="active" data-bs-target="#carousel" data-bs-slide-to="0" type="button"></button>
-                <button data-bs-target="#carousel" data-bs-slide-to="1" type="button"></button>
-                <button data-bs-target="#carousel" data-bs-slide-to="2" type="button"></button>
-            </div>
-        </div>
-        <!-- CAROUSEL-FIM -->
-    </section>
-    <!-- ABOUT -->
-    <section class="p-5" id="about-us">
-        <div class="container">
-            <div class="row about">
-                <div class="about__img col-md-5">
-                    <img src="./dist/images/logos/logo-esab-cursos.png" alt="Logo da ESAB Cursos">
-                </div>
-                <div class="col-md-7">
-                    <h2 class="about__title title-default-dark">Um pouco sobre nós</h2>
-                    <p class="text-default-dark">
-                        A <b>ESAB CURSOS</b> é uma instituição de ensino que acredita que a educação é o princípio
+            <!-- CAROUSEL-FIM -->
+        </section>
+        <!-- ABOUT -->
+        <section class="p-5" id="about-us">
+            <div class="container">
+                <div class="row about">
+                    <div class="about__img col-md-5">
+                        <img src="./dist/images/logos/logo-esab-cursos.png" alt="Logo da ESAB Cursos">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="about__title title-default-dark">Um pouco sobre nós</h2>
+                        <p class="text-default-dark">
+                            A
+                            <b>ESAB CURSOS</b>
+                            é uma instituição de ensino que acredita que a educação é o princípio
                         da
                         sabedoria
                         e que o conhecimento não se aprende apenas em bancos de faculdade.
-                    </p>
-                    <p class="text-default-dark">
-                        Com mais de 27 anos de experiência, oferecemos cursos online para alunos de todo o mundo,
+                        </p>
+                        <p class="text-default-dark">
+                            Com mais de 27 anos de experiência, oferecemos cursos online para alunos de todo o mundo,
                         sem
                         preconceitos de local ou área geográfica.
-                    </p>
-                    <p class="text-default-dark">
-                        Nosso objetivo é fornecer conhecimento de qualidade para aqueles que buscam uma forma de
+                        </p>
+                        <p class="text-default-dark">
+                            Nosso objetivo é fornecer conhecimento de qualidade para aqueles que buscam uma forma de
                         vida
                         baseada no aprendizado contínuo.
-                    </p>
-                    <p class="text-default-dark">
-                        Com a ESAB Cursos, você pode estudar em qualquer lugar do mundo, desde que tenha um
+                        </p>
+                        <p class="text-default-dark">
+                            Com a ESAB Cursos, você pode estudar em qualquer lugar do mundo, desde que tenha um
                         computador e
                         internet.
-                    </p>
-                    <p class="text-default-dark">
-                        Orgulhe-se do seu conhecimento e junte-se a nós!
-                    </p>
+                        </p>
+                        <p class="text-default-dark">
+                            Orgulhe-se do seu conhecimento e junte-se a nós!
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- COURSES -->
-    <section class="p-5 bg-dark-blue" id="courses">
-        <div class="container">
-            <h2 class="title-default">A quais cursos terei acesso?</h2>
-            <p class="courses__subtitle text-default">
-                Assinando nossa plataforma, você terá acesso aos <span>100 melhores cursos</span> da ESAB,
+        </section>
+        <!-- COURSES -->
+        <section class="p-5 bg-dark-blue" id="courses">
+            <div class="container">
+                <h2 class="title-default">A quais cursos terei acesso?</h2>
+                <p class="courses__subtitle text-default">
+                    Assinando nossa plataforma, você terá acesso aos
+                    <span>100 melhores cursos</span>
+                    da ESAB,
                 separados
                 em 5 áreas de conhecimento.
-            </p>
-            <p class="courses__subtitle text-default">
-                Clicando nos cursos abaixo você encontrará mais informações a respeito de cada um deles. E
+                </p>
+                <p class="courses__subtitle text-default">
+                    Clicando nos cursos abaixo você encontrará mais informações a respeito de cada um deles. E
                 poderá
                 adquiri-los de forma avulsa, caso deseje.
-            </p>
-            <div class="row mt-5">
-                <nav class="nav nav-pills courses__nav">
-                    <div class="nav-item col-12 col-md-2">
-                        <button class="courses__nav__button nav-link text-default active" data-bs-toggle="tab"
-                            data-bs-target="#tecnologia" type="button">Tecnologia</button>
-                    </div>
-                    <div class="nav-item col-12 col-md-2">
-                        <button class="courses__nav__button nav-link text-default" data-bs-toggle="tab"
-                            data-bs-target="#educacao" type="button">Educação</button>
-                    </div>
-                    <div class="nav-item col-12 col-md-2">
-                        <button class="courses__nav__button nav-link text-default" data-bs-toggle="tab"
-                            data-bs-target="#marketing" type="button">Marketing</button>
-                    </div>
-                    <div class="nav-item col-12 col-md-2">
-                        <button class="courses__nav__button nav-link text-default" data-bs-toggle="tab"
-                            data-bs-target="#financas" type="button">Finanças</button>
-                    </div>
-                    <div class="nav-item col-12 col-md-2">
-                        <button class="courses__nav__button nav-link text-default" data-bs-toggle="tab"
-                            data-bs-target="#gestao" type="button">Gestão</button>
-                    </div>
-                </nav>
-            </div>
-            <div class="row">
+                </p>
+                <div class="row mt-5">
+                    <nav class="nav nav-pills courses__nav">
+                        <div class="nav-item col-12 col-md-2">
+                            <button
+                                class="courses__nav__button nav-link text-default active"
+                                data-bs-toggle="tab"
+                                data-bs-target="#tecnologia"
+                                type="button"
+                            >Tecnologia</button>
+                        </div>
+                        <div class="nav-item col-12 col-md-2">
+                            <button
+                                class="courses__nav__button nav-link text-default"
+                                data-bs-toggle="tab"
+                                data-bs-target="#educacao"
+                                type="button"
+                            >Educação</button>
+                        </div>
+                        <div class="nav-item col-12 col-md-2">
+                            <button
+                                class="courses__nav__button nav-link text-default"
+                                data-bs-toggle="tab"
+                                data-bs-target="#marketing"
+                                type="button"
+                            >Marketing</button>
+                        </div>
+                        <div class="nav-item col-12 col-md-2">
+                            <button
+                                class="courses__nav__button nav-link text-default"
+                                data-bs-toggle="tab"
+                                data-bs-target="#financas"
+                                type="button"
+                            >Finanças</button>
+                        </div>
+                        <div class="nav-item col-12 col-md-2">
+                            <button
+                                class="courses__nav__button nav-link text-default"
+                                data-bs-toggle="tab"
+                                data-bs-target="#gestao"
+                                type="button"
+                            >Gestão</button>
+                        </div>
+                    </nav>
+                </div>
                 <div class="tab-content mt-5">
                     <div class="tab-pane active" id="tecnologia">
                         <div class="row gap-2 courses__tab">
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#cm009">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#cm009">
                                 Administração de Redes Linux
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#cm010">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#cm010">
                                 Administração de Redes Microsoft
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Arquitetura de Computadores
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Banco de Dados
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Designer Instrucional
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Engenharia de Software
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Estatística
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Estrutura e Fluxo de Informação
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Fundamentos de Sistemas de Informação
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Gerência de Projetos
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Gerência de Projetos em Telecomunicações
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Gestão da Tecnologia e Inovação
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Gestão do Conhecimento
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Infovia e a Globalização na Informática
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Inovação Tecnológica: Novas Formas de Gestão e Competitividade no Brasil e
                                 no Mundo
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Inteligência Competitiva
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Introdução às Redes de Computadores
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Metodologia de Análise de Sistemas
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Métodos e Técnicas no Uso das Novas Tecnologias
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Projeto de Redes
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Protocolos de Redes
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Redes de Acesso e Serviços de Telecomunicação
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Redes de Computadores
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Redes de Computadores e Redes de Banda Larga
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Segurança de Redes
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Serviços de Redes
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Sistema de Informações Gerenciais
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Sistemas de Comunicação por Rádio e Satélite
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Sistemas de Comunicações Móveis
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Sistemas de Comunicações Ópticos
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Sistemas de Multimídia e TV Digital
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Sistemas de Telemarketing
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Sistemas Operacionais
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Tecnologia e Infraestruturas de Telecomunicações
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Teste de Software
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Tópicos Avançados de Engenharia de Software
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Tópicos de Álgebra e Aritmética e Seu Ensino
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Tópicos de Estatística e Probabilidades
                             </button>
-                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal"
-                                data-bs-target="#">
+                            <button class="courses__tab__button text-default col-md-auto" data-bs-toggle="modal" data-bs-target="#">
                                 Tópicos de Geometria e Seu Ensino
                             </button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- MODAIS  -->
-            <div>
-                <div class="modal" id="cm009" data-bs-backdrop="static">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3>Administração de Redes Linux</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>
-                                    <b>Modalidade:</b> Curso Livre de Educação Especializada
-                                </p>
-                                <p>
-                                    <b>Carga horária:</b> 40 horas.
-                                </p>
-                                <p>
-                                    <b>Áreas de Conhecimento:</b> Acadêmicos, Aperfeiçoamento Profissional,
+                <!-- MODAIS  -->
+                <div>
+                    <div class="modal" id="cm009" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal__title">Administração de Redes Linux</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="modal__text">
+                                        <b>Modalidade:</b>
+                                        Curso Livre de Educação Especializada
+                                    </p>
+                                    <p class="modal__text">
+                                        <b>Carga horária:</b>
+                                        40 horas.
+                                    </p>
+                                    <p class="modal__text">
+                                        <b>Áreas de Conhecimento:</b>
+                                        Acadêmicos, Aperfeiçoamento Profissional,
                                     Tecnologia,
                                     Finanças.
-                                </p>
-                                <p>
-                                    <b>Objetivo:</b> Este curso tem como objetivo abordar o papel do administrador
+                                    </p>
+                                    <p class="modal__text">
+                                        <b>Objetivo:</b>
+                                        Este curso tem como objetivo abordar o papel do administrador
                                     de
                                     sistemas dentro de uma empresa, utilização, linhas de comando, controle de
                                     processos
                                     e das ferramentas mais importantes do Linux.
-                                </p>
-                                <p>
-                                    <b>O curso abordará os seguintes temas:</b>
-                                </p>
-                                <p>
-                                    Instalação, configurações básicas, Administração de Pacotes, Administração de
+                                    </p>
+                                    <p class="modal__text">
+                                        <b>O curso abordará os seguintes temas:</b>
+                                    </p>
+                                    <p class="modal__text">
+                                        Instalação, configurações básicas, Administração de Pacotes, Administração de
                                     Contas
                                     de usuários, Configuração de Servidores de Arquivos (SAMBA), Roteadores, Domain
                                     Name
                                     Server (DNS), NIS, DHCP, NFS, TFTP, Otimização de Kernel e Backup.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <p>Valor avulso: <span>R$ 189,00</span></p>
+                                    <div>
+                                            <a href="https://pay.hotmart.com/P86753185C" target="_blank" class="btn btn-sm  btn-success">
+                                                Comprar
+                                            Avulso
+                                            </a>
+                                        <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="return-button">
+                    <a href="#courses" class="return-button__link">
+                        <i class="return-button__link__icon bi bi-caret-up-fill"></i>
+                        <span class="return-button__link__text">Voltar ao topo</span>
+                    </a>
+                </button>
+            </div>
+        </section>
+        <!-- SIGNATURES -->
+        <section class="p-5" id="signature">
+            <div class="container">
+                <h2 class="signatures__title title-default-dark">Matricule-se e inicie sua jornada de conhecimento</h2>
+                <div class="row gap-4 justify-content-center">
+                    <div class="card col-md-5 col-lg-4 py-4 bg-dark-blue">
+                        <h3 class="card-header">Plano Mensal</h3>
+                        <div class="card-body">
+                            <p class="card__price">
+                                R$ 109,00
+                            </p>
+                            <p class="card__condition">
+                                Por Mês
+                            </p>
+                            <ul class="card__benefits text-default">
+                                <li class="card__benefits__item">
+                                    <i class="bi bi-check2-square"></i>
+                                    Acesso a 100 cursos de 40 horas cada.
+                                </li>
+                                <li class="card__benefits__item">
+                                    <i class="bi bi-check2-square"></i>
+                                    Acessos ilimitados por 30 dias
+                                </li>
+                                <li class="card__benefits__item">
+                                    <i class="bi bi-check2-square"></i>
+                                    Certificado
+                                </li>
+                                <li class="card__benefits__item">
+                                    <i class="bi bi-check2-square"></i>
+                                    7 dias de garantia
+                                </li>
+                                <li class="card__benefits__item">
+                                    <i class="bi bi-check2-square"></i>
+                                    Acesso imediato
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="btn card__link" href="https://pay.hotmart.com/A86442586S?off=uqlemmmh" target="_blank">Assinar</a>
+                    </div>
+                    <div class="card col-md-5 col-lg-4 py-4 bg-dark-blue">
+                        <h3 class="card-header">Plano Anual</h3>
+                        <div class="card-body">
+                            <p class="card__price">
+                                R$ 990,00
+                            </p>
+                            <p class="card__condition">
+                                Em Até 12x de R$ 82,50
+                            </p>
+                            <ul class="card__benefits text-default">
+                                <li class="card__benefits__item">
+                                    <i class="bi bi-check2-square"></i>
+                                    Acesso a 100 cursos de 40 horas cada.
+                                </li>
+                                <li class="card__benefits__item">
+                                    <i class="bi bi-check2-square"></i>
+                                    Acessos ilimitados por um ano
+                                </li>
+                                <li class="card__benefits__item">
+                                    <i class="bi bi-check2-square"></i>
+                                    Certificado
+                                </li>
+                                <li class="card__benefits__item">
+                                    <i class="bi bi-check2-square"></i>
+                                    7 dias de garantia
+                                </li>
+                                <li class="card__benefits__item">
+                                    <i class="bi bi-check2-square"></i>
+                                    Acesso imediato
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="btn card__link" href="https://pay.hotmart.com/A86442586S?off=mqug9aun" target="_blank">Assinar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ -->
+        <section id="faq" class="p-5 bg-dark-blue">
+            <div class="container">
+                <div class="accordion">
+                    <h2 class="title-default accordion__title">Perguntas Frequentes</h2>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-01">Quem pode realizar estes cursos?</button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="faq-01">
+                            <div class="accordion-body">
+                                <p>
+                                    Nosos cursos são voltados para qualquer pessoa que deseje aprimorar seus
+                                conhecimentos.
                                 </p>
                             </div>
-                            <div class="modal-footer">
-                                <div>
-                                    <a href="http://google.com" target="_blank" class="btn btn-sm  btn-success">Comprar
-                                        Avulso</a>
-                                </div>
-                                <button type="button" class="btn btn-sm btn-danger"
-                                    data-bs-dismiss="modal">Fechar</button>
-                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- SIGNATURES -->
-    <section class="p-5" id="signature">
-        <div class="container">
-            <h2 class="signatures__title title-default-dark">Matricule-se e inicie sua jornada de conhecimento</h2>
-            <div class="row gap-4 justify-content-center">
-                <div class="card col-md-4 py-4 bg-dark-blue">
-                    <h3 class="card-header">Plano Mensal</h3>
-                    <div class="card-body">
-                        <p class="card__price">
-                            R$ 109,00
-                        </p>
-                        <p class="card__condition">
-                            Por Mês
-                        </p>
-                        <ul class="card__benefits text-default">
-                            <li class="card__benefits__item"><i class="bi bi-check2-square"></i>
-                                Acesso a 100 cursos de 40 horas cada.
-                            </li>
-                            <li class="card__benefits__item">
-                                <i class="bi bi-check2-square"></i>
-                                Acessos ilimitados por 30 dias
-                            </li>
-                            <li class="card__benefits__item">
-                                <i class="bi bi-check2-square"></i>
-                                Certificado
-                            </li>
-                            <li class="card__benefits__item">
-                                <i class="bi bi-check2-square"></i>
-                                7 dias de garantia
-                            </li>
-                            <li class="card__benefits__item">
-                                <i class="bi bi-check2-square"></i>
-                                Acesso imediato
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="btn card__link" href="#" target="_blank">Assinar</a>
-                </div>
-                <div class="card col-md-4 py-4 bg-dark-blue">
-                    <h3 class="card-header">Plano Anual</h3>
-                    <div class="card-body">
-                        <p class="card__price">
-                            R$ 990,00
-                        </p>
-                        <p class="card__condition">
-                            Em Até 12x de R$ 82,50
-                        </p>
-                        <ul class="card__benefits text-default">
-                            <li class="card__benefits__item"><i class="bi bi-check2-square"></i>
-                                Acesso a 100 cursos de 40 horas cada.
-                            </li>
-                            <li class="card__benefits__item">
-                                <i class="bi bi-check2-square"></i>
-                                Acessos ilimitados por um ano
-                            </li>
-                            <li class="card__benefits__item">
-                                <i class="bi bi-check2-square"></i>
-                                Certificado
-                            </li>
-                            <li class="card__benefits__item">
-                                <i class="bi bi-check2-square"></i>
-                                7 dias de garantia
-                            </li>
-                            <li class="card__benefits__item">
-                                <i class="bi bi-check2-square"></i>
-                                Acesso imediato
-                            </li>
-                        </ul>
-                    </div>
-                        <a href="#" class="btn card__link" target="_blank">Assinar</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- FAQ -->
-    <section id="faq" class="p-5 bg-esc">
-
-        <div class="container">
-            <div class="accordion">
-                <h2 class="accordion-title">Perguntas Frequentes</h2>
-                <div class="occordion-item">
-                    <h3 class="accordion-header">
-                        <button type="button" class="accordion-button " data-bs-toggle="collapse"
-                            data-bs-target="#faq-01">Quem pode realizar estes cursos?</button>
-                    </h3>
-                    <div class="accordion-collapse collapse" id="faq-01">
-                        <div class="accordion-body">
-                            <p>
-                                Nosos cursos são voltados para qualquer pessoa que deseje aprimorar seus
-                                conhecimentos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="occordion-item">
-                    <h3 class="accordion-header">
-                        <button type="button" class="accordion-button " data-bs-toggle="collapse"
-                            data-bs-target="#faq-02">Como funciona o 'Prazo de Garantia'?</button>
-                    </h3>
-                    <div class="accordion-collapse collapse" id="faq-02">
-                        <div class="accordion-body">
-                            <p>
-                                O Prazo de Garantia é o período que você tem para pedir o reembolso integral do
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-02">Como funciona o 'Prazo de Garantia'?</button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="faq-02">
+                            <div class="accordion-body">
+                                <p>
+                                    O Prazo de Garantia é o período que você tem para pedir o reembolso integral do
                                 valor
                                 pago pela sua compra, caso o produto não seja satisfatório. Este prazo é de até 7
                                 dias a
                                 partir da data de assinatura.
-                            </p>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="occordion-item">
-                    <h3 class="accordion-header">
-                        <button type="button" class="accordion-button " data-bs-toggle="collapse"
-                            data-bs-target="#faq-03">O que é e como funciona o Certificado de Conclusão
-                            digital?</button>
-                    </h3>
-                    <div class="accordion-collapse collapse" id="faq-03">
-                        <div class="accordion-body">
-                            <p>
-                                Nosos cursos oferecem um certificado digital de conclusão. Os alunos podem emitir
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-03">O que é e como funciona o Certificado de Conclusão
+                            digital?
+                            </button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="faq-03">
+                            <div class="accordion-body">
+                                <p>
+                                    Nosos cursos oferecem um certificado digital de conclusão. Os alunos podem emitir
                                 esse
                                 certificado ao final do curso. Esses certificados poderão ser compartilhados em
                                 redes
                                 sociais como o LinkedIn e inseridos em informações curriculares.
-                            </p>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="occordion-item">
-                    <h3 class="accordion-header">
-                        <button type="button" class="accordion-button " data-bs-toggle="collapse"
-                            data-bs-target="#faq-04">Como acessar os cursos?</button>
-                    </h3>
-                    <div class="accordion-collapse collapse" id="faq-04">
-                        <div class="accordion-body">
-                            <p>
-                                Você receberá o acesso por email. O conteúdo será acessado ou baixado através de um
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-04">Como acessar os cursos?</button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="faq-04">
+                            <div class="accordion-body">
+                                <p>
+                                    Você receberá o acesso por email. O conteúdo será acessado ou baixado através de um
                                 computador, celular, tablet ou outro dispositivo digital. Você também pode acessar o
-                                produto da seguinte forma: <br><br>
-                                <b>01</b> - Faça login na Hotmart clicando em 'Entrar' <br>
-                                <b>02</b> - Acesse o menu lateral, clique em 'Minha conta' <br>
-                                <b>03</b> - Clique em 'Minhas compras' e lá estarão todos os produtos que você já
+                                produto da seguinte forma:
+                                    <br>
+                                    <br>
+                                    <b>01</b> - Faça login na Hotmart clicando em 'Entrar'
+                                    <br>
+                                    <b>02</b> - Acesse o menu lateral, clique em 'Minha conta'
+                                    <br>
+                                    <b>03</b>
+                                    - Clique em 'Minhas compras' e lá estarão todos os produtos que você já
                                 comprou!
-                            </p>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="occordion-item">
-                    <h3 class="accordion-header">
-                        <button type="button" class="accordion-button " data-bs-toggle="collapse"
-                            data-bs-target="#faq-05">Qual a carga horária dos cursos?</button>
-                    </h3>
-                    <div class="accordion-collapse collapse" id="faq-05">
-                        <div class="accordion-body">
-                            <p>
-                                Todos os cursos possuem uma carga de 40 horas cada.
-                            </p>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-05">Qual a carga horária dos cursos?</button>
+                        </h3>
+                        <div class="accordion-collapse collapse" id="faq-05">
+                            <div class="accordion-body">
+                                <p>
+                                    Todos os cursos possuem uma carga de 40 horas cada.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-    </section>
-    <footer class="p-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 copy mb-3 mb-md-0">
-                    <p>&copy;2023 - Todos os direitos reservados<br>
-                        ESBRA EDUCACIONAL ESPECIALIZADA LTDA<br>
-                        CNPJ 51.690.041/0001-98
-                    </p>
-                </div>
-                <div class="col-md-6 social-media">
-                    <h4>Visite nossas redes</h4>
-                    <ul>
-                        <li>
-                            <a href="https://www.instagram.com/esabfaculdadeonline/" class="social-media-link"
-                                target="_blank">
-                                <i class="bi bi-instagram social-media-icon"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/esab.oficial/?locale=pt_BR" class="social-media-link"
-                                target="_blank">
-                                <i class="bi- bi-facebook social-media-icon"></i>
-                            </a>
-                        </li>
-                    </ul>
+        </section>
+        <!-- FOOTER -->
+        <footer class="p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copy mb-3 mb-md-0">
+                        <p class="copy__text">&copy;2023 - Todos os direitos reservados
+                            <br>
+                            ESBRA EDUCACIONAL ESPECIALIZADA LTDA
+                            <br>
+                            CNPJ 51.690.041/0001-98
+                        </p>
+                    </div>
+                    <div class="col-md-6 social-media">
+                        <h4 class="social-media__title text-default-dark">Visite nossas redes</h4>
+                        <ul class="social-media__items">
+                            <li class="social-media__items__item">
+                                <a class="social-media__items__item__link" href="https://www.instagram.com/esabfaculdadeonline/" target="_blank">
+                                    <i class="bi bi-instagram social-media__items__item__link__icon"></i>
+                                </a>
+                            </li>
+                            <li class="social-media__items__item ms-3">
+                                <a class="social-media__items__item__link" href="https://www.facebook.com/esab.oficial/?locale=pt_BR" target="_blank">
+                                    <i class="bi- bi-facebook social-media__items__item__link__icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

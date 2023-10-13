@@ -3,7 +3,10 @@
 @use 'banners';
 @use 'about-us';
 @use 'courses';
+@use 'modal';
 @use 'signatures';
+@use 'faq';
+@use 'footer';
 
 @mixin titles ($color, $size) {
     margin-bottom: 32px;
@@ -27,7 +30,7 @@
 }
 
 .title-default-dark {
-    @include titles(variables.$color_1, variables.$fs-title-default);    
+    @include titles(variables.$color_1, variables.$fs-title-default);
 }
 
 .title-default {
@@ -48,4 +51,212 @@
 
 #nav-menu {
     justify-content: end;
+}
+
+// BREACKPOINTS
+
+@media (max-width: 480px) {
+
+    .title-default-dark {
+        @include titles(variables.$color_1, variables.$fs-title-small);
+    }
+
+    .title-default {
+        @include titles(variables.$color_3, variables.$fs-title-small);
+    }
+
+    .text-default-dark {
+        @include texts(variables.$color_1, variables.$fs-text-small);
+    }
+
+    .text-default {
+        @include texts(variables.$color_4, variables.$fs-text-small);
+    }
+
+    .carousel-item {
+        height: 220px;
+    }
+
+    .about {
+
+        &__img {
+            img {
+                width: 70%;
+            }
+        }
+
+        &__title {
+
+            &::after {
+                width: 220px;
+            }
+        }
+    }
+
+    .return-button {
+        display: block;
+    }
+
+    .signatures {
+
+        &__title {
+
+            &::after {
+                width: 200px;
+            }
+        }
+    }
+
+    .card {
+
+        &__price {
+            font-size: 40px;
+        }
+
+        &__benefits {
+            width: 90%;
+            padding: 0;
+
+            &__item {
+                width: 100%;
+            }
+        }
+    }
+
+    .modal {
+
+        &__title {
+            font-size: variables.$fs-text-default;
+        }
+    
+        &__text {
+            font-size: variables.$fs-text-small;
+        }
+        
+        &-footer {
+            flex-direction: column;
+        }
+    }
+
+    .accordion {
+        &-button {
+            font-size: variables.$fs-text-default;
+        }
+
+        &-body {
+            p {
+                font-size: variables.$fs-text-small;
+            }
+        }
+    }
+
+    .copy {
+    
+        &__text {
+            font-size: 8px;            
+        }
+    }
+    
+    .social-media {
+        &__title {
+            font-size: 8px;
+        }
+    
+        &__items {
+    
+            &__item {
+                &__link {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .carousel-item {
+        height: 340px;
+    }
+
+    .card {
+
+        &__benefits {
+            width: 90%;
+            padding: 0;
+
+            &__item {
+                width: 100%;
+            }
+        }
+    }
+
+    .copy {
+    
+        &__text {
+            font-size: 10px;            
+        }
+    }
+    
+    .social-media {
+        &__title {
+            font-size: 10px;
+        }
+    
+        &__items {
+    
+            &__item {
+                &__link {
+                    font-size: 18px;
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel-item {
+        height: 520px;
+    }
+    
+    .courses {
+        &__nav {
+            &__button {
+                padding: 8px 8px;
+            }
+        }
+    }
+
+    .card {
+
+        &__benefits {
+            width: 90%;
+            padding: 0;
+
+            &__item {
+                width: 100%;
+            }
+        }
+    }
+
+    .copy {
+    
+        &__text {
+            font-size: 10px;            
+        }
+    }
+    
+    .social-media {
+        &__title {
+            font-size: 10px;
+        }
+    
+        &__items {
+    
+            &__item {
+                &__link {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }

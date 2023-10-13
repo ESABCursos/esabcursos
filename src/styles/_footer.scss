@@ -1,0 +1,41 @@
+@use 'variables';
+
+.copy {
+    display: flex;
+    justify-content: center;
+
+    &__text {
+        font-size: variables.$fs-text-small;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        width: 10%;
+        margin: 0 auto;
+        padding: 0;
+
+        &__item {
+            list-style: none;
+
+            &__link {
+                text-decoration: none;
+                color: variables.$color_1;
+                font-size: 20px;
+            }
+        }
+    }
+}

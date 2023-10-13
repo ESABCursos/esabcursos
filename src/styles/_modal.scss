@@ -1,0 +1,29 @@
+@use 'variables';
+
+.modal {
+
+    &__title {
+        font-size: variables.$fs-text-big;
+        text-align: center;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    &__text {
+        font-size: variables.$fs-text-default;
+    }
+
+    &-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        p {
+            font-size: 14px;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}

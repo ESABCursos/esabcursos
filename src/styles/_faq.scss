@@ -1,0 +1,49 @@
+@use 'variables';
+
+.accordion {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;    
+
+    &__title {
+        text-align: center;
+    }
+
+    &-item {
+        background-color: variables.$color_1;
+        border: none;
+
+    }
+
+    &-button {
+        background-color: transparent;
+        color: variables.$color_4;
+        font-size: variables.$fs-text-big;
+        font-weight: normal;
+
+        &:not(.collapsed) {
+            color: variables.$color_4;
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        &:focus {
+            border: none;
+            background-color: transparent;
+            color: variables.$color_4;
+            box-shadow: none;
+        }
+
+        &:hover {
+            color: variables.$color_2;
+        }
+
+    }
+
+    &-body  {
+        p {
+            font-size: variables.$fs-text-default;
+            color: #9c9999;
+        }
+    }
+}

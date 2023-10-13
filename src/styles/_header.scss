@@ -24,21 +24,27 @@
 }//logo-end
 
 //navbar
-.nav-item {
-    margin-left: 8px;
-}
-
-.nav-link {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: variables.$fs-text-default;
-    color: variables.$color_3;
-
-    &:hover {
-        color: variables.$color_2;
+.navbar {
+    .nav-item {
+        margin-left: 8px;
     }
-}
+    
+    .nav-link {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: variables.$fs-text-default;
+        color: variables.$color_3;
+    
+        &:hover {
+            color: variables.$color_2;
+        }
+    }
+    
+    .navbar-toggler {
+        background-color: variables.$color_2;
 
-.navbar-toggler {
-    background-color: variables.$color_2;
+        &-icon {
+            font-size: 16px;
+        }
+    }
 }//navbar-end
